@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project authentication</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>Home</ul>
+        <ul>About</ul>
+        <ul>Service</ul>
+        <ul>Contact</ul>
+        <ul>Project by Ashish:-)</ul>
+    </nav>
+    <div class="container" id= "signupsuccess" style="display:  none;">
+        <h1>Welcome User!</h1>
+        <h2 style="color: rgb(9, 191, 9);">Signup Successfull</h2>
+    </div>
+    <div class="container" id="signup_container">
+        <h1>Hello user! please sign up</h1>
+
+       <label for="email">Enter your email address</label>
+            <input type="text" class ="input" id ="email" placeholder="enter email" required>
+            <label for="password" >Enter your  password</label>
+            <input type="password" class="input" id ="password"placeholder="enter password">
+            <input type="password" class="input" id ="confirm_password"placeholder="confirm password">
+         <p>Show password <input type="checkbox" onclick="show_password()" name="checkbox" id="check" ></p>
+         <h5 id="password_msg" style="display: none; color :red;" >Password not matching</h5>
+         <h2 id="sign_up_success" style="display: none; color :green;" >Sign Up successfull</h5>
+         <button class = "sign_up_btn" id ="sign_up"onclick="sign_up()">Sign Up</button>
+            
+      
+        
+    </div>
+    
+</body>
+<script src="auth.js"></script>
+</html>
